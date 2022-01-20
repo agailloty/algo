@@ -1,0 +1,45 @@
+Algorithme TVA
+
+Début
+
+Déclarer la variable TN comme un un nombre réel;
+Déclarer la variable TI comme un un nombre réel;
+Déclarer la variable TR comme un un nombre réel;
+Déclarer la variable TP comme un un nombre réel;
+
+Assigner à TN la valeur 0.2;
+Assigner à TI la valeur 0.1;
+Assigner à TR la valeur 0.055;
+Assigner à TP la valeur 0.021;
+
+Afficher "Bonjour, bienvenue dans ce programme";
+Afficher "Voici les taux de TVA en vigueur en France" &
+& "Taux normal : " & TN & 
+& "Taux intermédiaire : " & TI &
+& "Taux réduit : " & TR & 
+& "Taux particulier : " & TP;
+
+Afficher "Veuillez taper TN pour le taux normal, TI pour le taux intermédiaire, TR pour le taux réduit et TP pour le taux particulier";
+Déclarer la variable choix utilisateur TAUX_CHOISI comme une chaine de caractère;
+Obtenir des données de l'utilisateur et assigner à la variable TAUX_CHOISI sa saisie;
+
+Si la valeur saisie par l'utilisateur ne correspond ni à TN, ni à TI, ni à TR, ni à TP alors:
+	afficher "Veuiller saisir une valeur dans la liste suivante : TN, TI, TR, TP";
+	Quitter le programme;
+
+Déclarer une variable MONTANT comme un nombre réel;
+Obtenir des données de l'utilisateur et assigner à la variable MONTANT  sa saisie;
+Déclarer une variable RESULTAT comme un nombre réel;
+Si TAUX_CHOISI = "TN" alors:
+	RESULTAT = MONTANT * TN;
+SINON SI TAUX_CHOISI = "TI" alors:
+	RESULTAT = MONTANT * TI;
+SINON SI TAUX_CHOISI = "TR" alors:
+	RESULTAT = MONTANT * TR;
+SINON SI TAUX_CHOISI = "TP" alors:
+	RESULTAT = MONTANT * TP;
+
+Afficher "La TVA pour le montant saisi est de " & RESULTAT & "EUR";
+	
+
+Fin
